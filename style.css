@@ -1,0 +1,60 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* ====== Custom properties ====== */
+:root {
+    /* === font === */
+    --ff-open-sans: 'Open Sans', sans-serif;
+    --fw-os-reg: 400;
+    --fw-os-med: 700;
+    /* headings, Call-to-actions, header navigation */
+    --ff-raleway: 'Raleway', sans-serif;
+    --fw-ral-reg: 400;
+    --fw-ral-med: 700;
+    --fs: 0.875rem;
+
+    /* === color === */
+    /* intro and email background */
+    --light-bg: hsl(217, 28%, 15%);
+    /* main background */
+    --main-bg: hsl(218, 28%, 13%);
+    /* footer background */
+    --footer-bg: hsl(216, 53%, 9%);
+    /* testimonials background */
+    --review-bg: hsl(219, 30%, 18%);
+    /* button gradient */
+    --btn-grad: linear-gradient(90deg
+    hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    /* email error text */
+    --error-txt: hsl(0, 100%, 63%);
+    /* full white */
+    --main-txt: hsl(0, 0%, 100%);
+}
+
+/* ====== Style ====== */
