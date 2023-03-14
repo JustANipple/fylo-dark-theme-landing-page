@@ -51,6 +51,8 @@ p, h1, h2, h3, h4, h5, h6 {
     /* button gradient */
     --btn-grad: linear-gradient(90deg,
     hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    /* check fylo color */
+    --check-txt: hsl(176, 68%, 64%);
     /* email error text */
     --error-txt: hsl(0, 100%, 63%);
     /* full white */
@@ -175,4 +177,51 @@ body {
 
 .features .security-icon {
   max-width: 3rem;
+}
+
+/* ====== Check ====== */
+.check {
+  padding-inline: 2rem;
+  padding-block: 2rem;
+}
+
+.illustration-productive {
+  padding-inline: 0.25rem;
+  padding-block: 2.5rem;
+}
+
+.check-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.check-title {
+  font-size: 1rem;
+  margin-inline-start: 0.5rem;
+}
+
+.check-desc-one,
+.check-desc-two {
+  font-size: 0.85rem;
+}
+
+.check-fylo {
+  color: var(--check-txt);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-block: 0.25rem;
+  border-bottom: 1px solid var(--check-txt);
+  font-size: 0.75rem;
+  width: fit-content;
+}
+
+.see-how {
+  text-decoration: none;
+  color: var(--check-txt);
+}
+
+.arrow-icon {
+  height: 100%;
 }
