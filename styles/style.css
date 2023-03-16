@@ -1,3 +1,5 @@
+/* ====== Font families ====== */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -35,5 +37,32 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* ====== Custom properties ====== */
 :root {
-  --c: hsl(217, 28%, 15%);
+  /* ====== Colors ====== */
+  /* top nav, illustration and bottom sign up background */
+  --intro-sign-bg: hsl(217, 28%, 15%);
+  /* main background */
+  --main-bg: hsl(218, 28%, 13%);
+  /* footer background */
+  --footer-bg: hsl(216, 53%, 9%);
+  /* testimonials background */
+  --test-bg: hsl(219, 30%, 18%);
+  /* get-started-for-free button */
+  --btn-grad: linear-gradient(90deg,
+  hsl(176, 68%, 64%),
+  hsl(198, 60%, 50%));
+  /* email error text */
+  --error-txt: hsl(0, 100%, 63%);
+  /* whole text */
+  --main-txt: hsl(0, 0%, 100%);
+  /* ====== Fonts ====== */
+  /* base font size for desktop view */
+  --base-fs: 0.875rem;
+  /* font family for body text */
+  --ff-open-sans: "Open Sans", sans-serif;
+  /* font family for headings, call-to-actions, header Navigation */
+  --ff-raleway: "Raleway", sans-serif;
+  /* fonts share the same weights */
+  --fw-reg: 400;
+  --fw-med: 700;
+  /* ====== Spaces ====== */
 }/*# sourceMappingURL=style.css.map */
