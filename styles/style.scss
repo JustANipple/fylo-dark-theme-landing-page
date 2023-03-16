@@ -38,17 +38,19 @@ body {
 
 /* ======Main====== */
 .main-cont {
-    margin-inline: 1.5rem;
+    margin-inline: 0;
 }
 
 /* ======Intro====== */
 .intro {
+    position: relative;
     display: grid;
     place-items: center;
     text-align: center;
     color: var(--main-txt);
     gap: 2rem;
     background-image: url(images/bg-curvy-mobile.svg);
+    padding-block: 1.5rem;
 
     .illustration {
         padding-inline: 1.5rem;
@@ -57,6 +59,7 @@ body {
     .text {
         display: grid;
         gap: 1rem;
+        padding-inline: 1.5rem;
 
         .title {
             font-family: var(--ff-raleway);
@@ -64,6 +67,7 @@ body {
 
         .desc {
             font-size: var(--base-fs);
+            padding-inline: 1rem;
         }
     }
 
@@ -77,5 +81,13 @@ body {
         border-radius: 100vw;
         padding-inline: 5rem;
         padding-block: 0.75rem;
+    }
+
+    .wave {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
     }
 }
