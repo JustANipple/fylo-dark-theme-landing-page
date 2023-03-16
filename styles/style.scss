@@ -1,3 +1,32 @@
 @use "reset";
 @use "customProperties";
 @use "desktopView";
+
+body {
+    font-family: var();
+    background-color: var(--intro-sign-bg);
+    color: var(--main-txt);
+}
+
+/* ====== Navigation bar ====== */
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--ff-raleway);
+    font-size: 0.75rem;
+
+    .logo {
+        max-width: 5rem;
+    }
+
+    .nav-options {
+        display: flex;
+        gap: var(--m-gap);
+
+        a {
+            text-decoration: none;
+            color: var(--main-txt);
+        }
+    }
+}
