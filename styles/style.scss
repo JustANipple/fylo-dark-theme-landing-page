@@ -3,30 +3,79 @@
 @use "desktopView";
 
 body {
-    font-family: var();
+    font-family: var(--ff-open-sans);
     background-color: var(--intro-sign-bg);
-    color: var(--main-txt);
 }
 
-/* ====== Navigation bar ====== */
-.navigation-bar {
+.sr-title {
+    position: absolute;
+    opacity: 0;
+}
+
+/* ======Navigation====== */
+.navigation {
+    font-family: var(--ff-raleway);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--ff-raleway);
+    padding: 1.5rem;
+}
+
+.nav-logo {
+    max-width: 5rem;
+}
+
+.nav-options {
+    display: flex;
+    gap: 1.5rem;
     font-size: 0.75rem;
 
-    .logo {
-        max-width: 5rem;
+    a {
+        text-decoration: none;
+        color: var(--main-txt);
+    }
+}
+
+/* ======Main====== */
+.main-cont {
+    margin-inline: 1.5rem;
+}
+
+/* ======Intro====== */
+.intro {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: var(--main-txt);
+    gap: 2rem;
+    background-image: url(images/bg-curvy-mobile.svg);
+
+    .illustration {
+        padding-inline: 1.5rem;
     }
 
-    .nav-options {
-        display: flex;
-        gap: var(--m-gap);
+    .text {
+        display: grid;
+        gap: 1rem;
 
-        a {
-            text-decoration: none;
-            color: var(--main-txt);
+        .title {
+            font-family: var(--ff-raleway);
         }
+
+        .desc {
+            font-size: var(--base-fs);
+        }
+    }
+
+    .get-started {
+        color: var(--main-txt);
+        font-family: var(--ff-raleway);
+        font-size: var(--base-fs);
+        font-weight: var(--fw-med);
+        background: var(--btn-grad);
+        border: none;
+        border-radius: 100vw;
+        padding-inline: 5rem;
+        padding-block: 0.75rem;
     }
 }
