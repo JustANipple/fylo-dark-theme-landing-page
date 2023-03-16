@@ -19,7 +19,6 @@
         /* ======Intro====== */
         .intro {
             gap: 2rem;
-            margin-inline: auto;
 
             .illustration {
                 padding-inline: unset;
@@ -28,6 +27,7 @@
             .text {
                 gap: 2rem;
                 max-width: 45rem;
+                padding-inline: 1rem;
 
                 .title {
                     font-size: 2.5rem;
@@ -35,7 +35,7 @@
 
                 .desc {
                     font-size: 1.25rem;
-                    padding-inline: 3rem;
+                    padding-inline: 2.5rem;
                 }
             }
 
@@ -47,8 +47,51 @@
 
             .wave {
                 position: absolute;
-                bottom: -12rem;
+                bottom: -11rem;
                 z-index: -1;
+            }
+        }
+
+        /* ====== Features ====== */
+        .features {
+            max-width: 60rem;
+            margin-inline: auto;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 5.5rem;
+            column-gap: 6rem;
+            margin-block: 10rem;
+
+            .access,
+            .security,
+            .real-time,
+            .store {
+                display: grid;
+                gap: 2rem;
+
+                &:nth-child(2) .icon {
+                    max-width: unset;
+                }
+
+                .icon {
+                    max-width: unset;
+                    margin: auto auto;
+                }
+
+                .text {
+                    display: grid;
+                    gap: unset;
+
+                    .title {
+                        font-family: var(--ff-raleway);
+                    }
+
+                    .desc {
+                        font-size: var(--base-fs);
+                    }
+                }
+
+
             }
         }
 

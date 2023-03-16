@@ -39,6 +39,8 @@ body {
 /* ======Main====== */
 .main-cont {
     margin-inline: 0;
+    display: grid;
+    gap: 5rem;
 }
 
 /* ======Intro====== */
@@ -50,10 +52,9 @@ body {
     color: var(--main-txt);
     gap: 2rem;
     background-image: url(images/bg-curvy-mobile.svg);
-    padding-block: 1.5rem;
 
     .illustration {
-        padding-inline: 1.5rem;
+        padding: 1.5rem;
     }
 
     .text {
@@ -89,5 +90,47 @@ body {
         img {
             width: 100%;
         }
+    }
+}
+
+/* ====== Features ====== */
+.features {
+    background-color: var(--main-bg);
+    display: grid;
+    color: var(--main-txt);
+    text-align: center;
+    gap: 5.5rem;
+
+    .access,
+    .security,
+    .real-time,
+    .store {
+        display: grid;
+        gap: 2rem;
+        padding-inline: 1.75rem;
+
+        &:nth-child(2) .icon {
+            max-width: 3.5rem;
+        }
+
+        .icon {
+            max-width: 4rem;
+            margin-inline: auto;
+        }
+
+        .text {
+            display: grid;
+            gap: 1rem;
+
+            .title {
+                font-family: var(--ff-raleway);
+            }
+
+            .desc {
+                font-size: var(--base-fs);
+            }
+        }
+
+
     }
 }
