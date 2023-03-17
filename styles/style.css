@@ -167,6 +167,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   body .stay-productive {
     grid-template-columns: 1fr 1fr;
+    max-width: 77rem;
     margin-inline: auto;
     gap: 3.5rem;
   }
@@ -174,19 +175,15 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-inline: unset;
     margin-inline-start: auto;
   }
-  body .stay-productive .text {
-    margin-inline-end: 5rem;
-  }
   body .stay-productive .text .title {
     margin-inline: unset;
     font-size: 2.5rem;
-    margin-inline-end: 15rem;
+    margin-inline-end: 5rem;
   }
   body .stay-productive .text .desc-one,
   body .stay-productive .text .desc-two,
   body .stay-productive .text .see-how {
     font-size: 1rem;
-    margin-inline-end: 9rem;
   }
   body .stay-productive .text .see-how .desc {
     font-size: unset;
