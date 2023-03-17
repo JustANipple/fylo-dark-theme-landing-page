@@ -149,7 +149,7 @@ body {
 
     .text {
         display: grid;
-        row-gap: 1.5rem;
+        row-gap: 1rem;
 
         .title {
             font-family: var(--ff-raleway);
@@ -169,7 +169,7 @@ body {
             color: var(--see-how-txt);
             border-bottom: 1px solid var(--see-how-txt);
             width: fit-content;
-            padding-block: 0.25rem;
+            padding-block: 0 0.25rem;
 
             .desc {
                 font-size: 0.75rem;
@@ -179,5 +179,96 @@ body {
                 aspect-ratio: 1/1;
             }
         }
+    }
+}
+
+/* ====== Testimonials ====== */
+.testimonials {
+    display: grid;
+    gap: 1.5rem;
+    place-content: center;
+    position: relative;
+    z-index: 1;
+    color: var(--main-txt);
+
+    .review {
+        background-color: var(--test-bg);
+        margin-inline: 3rem;
+        padding: 1.5rem;
+        border-radius: 0.25rem;
+        display: grid;
+        gap: 1.5rem;
+        position: relative;
+        box-shadow: 0 0 1.5rem -0.75rem var(--intro-sign-bg);
+
+        & > .icon {
+            max-width: 1.5rem;
+            position: absolute;
+            top: -1.1rem;
+            left: 0.5rem;
+            z-index: -1;
+        }
+
+        .desc {
+            font-size: 0.625rem;
+        }
+
+        .avatar {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            .icon {
+                max-width: 1.5rem;
+                border-radius: 100vw;
+            }
+
+            .info {
+
+                .name {
+                    font-size: 0.625rem;
+                    font-weight: var(--fw-med);
+                }
+
+                .role {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+/* ====== Get early access ====== */
+.get-ea {
+    background-color: var(--intro-sign-bg);
+    padding-block: 2.5rem 2rem;
+    padding-inline: 1.5rem;
+    margin-inline: 1.5rem;
+    display: grid;
+    gap: 2.5rem;
+    color: var(--main-txt);
+    text-align: center;
+    box-shadow: 0 0.5rem 1.5rem -0.75rem black;
+    border-radius: 0.5rem;
+
+    .text {
+        display: grid;
+        gap: 1rem;
+
+        .title {
+            font-family: var(--ff-raleway);
+            font-weight: var(--fw-med);
+            font-size: calc(var(--base-fs) * 1.25);
+        }
+
+        .desc {
+            font-size: var(--base-fs);
+        }
+    }
+
+    .email-form {
+        display: grid;
+        place-content: center;
+        gap: 1.5rem;
     }
 }

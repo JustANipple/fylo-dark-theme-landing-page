@@ -131,5 +131,26 @@
             }
         }
 
+        /* ====== Testimonials ====== */
+        .testimonials {
+            gap: 2rem;
+            grid-template-columns: repeat(3, 20rem);
+
+            .review {
+                margin-inline: unset;
+                padding-top: 2rem;
+
+                & > .icon {
+                    max-width: unset;
+                    top: -2.25rem;
+                    left: -0.5rem;
+                }
+
+                .desc {
+                    font-size: var(--base-fs);
+                }
+            }
+        }
+
     }
 }
