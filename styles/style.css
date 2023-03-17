@@ -235,6 +235,7 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-inline-start: 2.5rem;
     grid-row: 1;
     grid-column: 1/2;
+    font-size: unset;
   }
   body .get-ea .email-form #email::placeholder {
     font-size: 0.75rem;
@@ -291,6 +292,10 @@ p, h1, h2, h3, h4, h5, h6 {
     height: 2rem;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--ff-open-sans);
   background-color: var(--intro-sign-bg);
@@ -322,6 +327,7 @@ body {
 .nav-options a {
   text-decoration: none;
   color: var(--main-txt);
+  position: relative;
 }
 
 /* ======Intro====== */
@@ -335,7 +341,8 @@ body {
   background-image: url(images/bg-curvy-mobile.svg);
 }
 .intro .illustration {
-  padding: 1.5rem;
+  padding-inline: 2rem;
+  padding-block: 1.5rem 0;
 }
 .intro .text {
   display: grid;
@@ -548,6 +555,7 @@ body {
   border-radius: 100vw;
   border: none;
   outline: none;
+  font-size: 0.75rem;
 }
 .get-ea .email-form #email::placeholder {
   font-size: 0.625rem;
@@ -631,6 +639,7 @@ body {
   display: grid;
   gap: 1rem;
   padding: 0;
+  width: 5.5rem;
 }
 .footer .redirect ul li {
   list-style: none;
@@ -654,4 +663,49 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* ====== Active states ====== */
+.nav-options a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 50%;
+  bottom: 0;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-options a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.get-started:hover,
+.see-how:hover,
+.social div:hover {
+  cursor: pointer;
+}
+
+.get-started:hover,
+.see-how:hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.get-started:hover {
+  filter: brightness(1.1) saturate(0.7);
+}
+
+.see-how:hover {
+  filter: brightness(500%);
+}
+
+.redirect a:hover {
+  font-weight: var(--fw-med);
+}
+
+.social div:hover {
+  border-color: var(--see-how-txt);
+  color: var(--see-how-txt);
 }/*# sourceMappingURL=style.css.map */

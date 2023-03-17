@@ -2,6 +2,10 @@
 @use "customProperties";
 @use "desktopView";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--ff-open-sans);
     background-color: var(--intro-sign-bg);
@@ -33,6 +37,7 @@ body {
     a {
         text-decoration: none;
         color: var(--main-txt);
+        position: relative;
     }
 }
 
@@ -47,7 +52,8 @@ body {
     background-image: url(images/bg-curvy-mobile.svg);
 
     .illustration {
-        padding: 1.5rem;
+        padding-inline: 2rem;
+        padding-block: 1.5rem 0;
     }
 
     .text {
@@ -279,6 +285,7 @@ body {
             border-radius: 100vw;
             border: none;
             outline: none;
+            font-size: 0.75rem;
 
             &::placeholder {
                 font-size: 0.625rem;
@@ -359,6 +366,7 @@ body {
             display: grid;
             gap: 1rem;
             padding: 0;
+            width: 5.5rem;
 
             li {
                 list-style: none;
@@ -389,4 +397,49 @@ body {
             align-items: center;
         }
     }
+}
+
+/* ====== Active states ====== */
+.nav-options a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 50%;
+    bottom:0;
+    background-color: white;
+    transition: all .2s ease-in-out;
+}
+
+.nav-options a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.get-started:hover,
+.see-how:hover,
+.social div:hover {
+    cursor: pointer;
+}
+
+.get-started:hover,
+.see-how:hover {
+    transition: all .2s ease-in-out;
+}
+
+.get-started:hover {
+    filter: brightness(1.1) saturate(0.7);
+}
+
+.see-how:hover {
+    filter: brightness(500%);
+}
+
+.redirect a:hover {
+    font-weight: var(--fw-med);
+}
+
+.social div:hover {
+    border-color: var(--see-how-txt);
+    color: var(--see-how-txt);
 }
