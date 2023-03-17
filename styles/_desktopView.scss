@@ -133,8 +133,9 @@
 
         /* ====== Testimonials ====== */
         .testimonials {
-            gap: 2rem;
-            grid-template-columns: repeat(3, 20rem);
+            gap: 2.5rem;
+            grid-template-columns: repeat(3, 22rem);
+            padding-block: 2rem 5rem;
 
             .review {
                 margin-inline: unset;
@@ -147,7 +148,7 @@
                 }
 
                 .desc {
-                    font-size: var(--base-fs);
+                    font-size: 0.875rem;
                 }
             }
         }
@@ -159,7 +160,7 @@
             padding-block: 3rem 2.5rem;
             padding-inline: 4.5rem;
             gap: 2.5rem;
-            top: 7rem;
+            top: 7.5rem;
 
             .text {
                 gap: 1rem;
@@ -193,6 +194,53 @@
                 .get-started {
                     font-size: 0.875rem;
                     padding-inline: 2rem;
+                }
+            }
+        }
+
+        /* ====== Footer ====== */
+        .footer {
+            gap: 2rem;
+            margin-inline: auto;
+            place-content: center;
+            padding-block: 12.5rem 5.5rem;
+
+            .logo {
+                padding-inline: unset;
+            }
+
+            .footer-content {
+                display: flex;
+                align-items: start;
+                gap: 8.5rem;
+                width: fit-content;
+
+                /* ====== More info ====== */
+                .info {
+                    display: flex;
+                    max-width: 40rem;
+                    gap: 5.5rem;
+                }
+            }    
+
+            /* ====== Redirect links ====== */
+            .redirect {
+                display: flex;
+                gap: 3rem;
+
+                ul {
+                    height: fit-content;
+                }
+            }
+
+            /* ====== Social ====== */
+            .social {
+                gap: 1rem;
+                font-size: 1rem;
+                
+                div {
+                    width: 2rem;
+                    height: 2rem;
                 }
             }
         }

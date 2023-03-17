@@ -190,7 +190,7 @@ body {
     .review {
         background-color: var(--test-bg);
         margin-inline: 3rem;
-        padding: 1.5rem;
+        padding: 1.75rem;
         border-radius: 0.25rem;
         display: grid;
         gap: 1.5rem;
@@ -318,17 +318,20 @@ body {
     background-color: var(--footer-bg);
     color: var(--main-txt);
     display: grid;
-    gap: 4rem;
+    gap: 3rem;
 
-    .header {
+    .logo {
+        padding-inline: 1rem;
+    }
+
+    .footer-content {
         display: grid;
-        gap: 2.5rem;
+        gap: 10rem;
 
-        .logo {
-            padding-inline: 1rem;
-        }
+
         /* ====== More info ====== */
-        .info {
+        .info,
+        .phoneAndEmail {
             display: grid;
             gap: 1.5rem;
 
