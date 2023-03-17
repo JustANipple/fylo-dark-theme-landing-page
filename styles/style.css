@@ -93,7 +93,7 @@ p, h1, h2, h3, h4, h5, h6 {
     gap: 2rem;
   }
   body .intro .illustration {
-    padding-inline: unset;
+    padding: unset;
   }
   body .intro .text {
     gap: 2rem;
@@ -194,7 +194,7 @@ p, h1, h2, h3, h4, h5, h6 {
   body .testimonials {
     gap: 2.5rem;
     grid-template-columns: repeat(3, 22rem);
-    padding-block: 2rem 5rem;
+    padding-block: 0 5rem;
   }
   body .testimonials .review {
     margin-inline: unset;
@@ -211,7 +211,7 @@ p, h1, h2, h3, h4, h5, h6 {
   body .get-ea {
     max-width: 54rem;
     margin-inline: auto;
-    padding-block: 3rem 2.5rem;
+    padding-block: 2.5rem 1rem;
     padding-inline: 4.5rem;
     gap: 2.5rem;
     top: 7.5rem;
@@ -222,26 +222,35 @@ p, h1, h2, h3, h4, h5, h6 {
   body .get-ea .text .title {
     font-size: 2rem;
   }
+  body .get-ea .text .desc {
+    padding-inline: 2rem;
+  }
   body .get-ea .email-form {
-    display: flex;
+    display: grid;
+    column-gap: 1.5rem;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
   }
-  body .get-ea .email-form .input-box {
-    flex: 2.5;
-  }
-  body .get-ea .email-form .input-box #email {
+  body .get-ea .email-form #email {
     padding-inline-start: 2.5rem;
+    grid-row: 1;
+    grid-column: 1/2;
   }
-  body .get-ea .email-form .input-box #email::placeholder {
+  body .get-ea .email-form #email::placeholder {
     font-size: 0.75rem;
   }
-  body .get-ea .email-form .input-box .error {
+  body .get-ea .email-form .error {
+    grid-row: 2;
     color: var(--error-txt);
     font-size: 0.75rem;
     margin-inline: 2.5rem;
+    padding-block: 0.25rem;
+    text-align: left;
   }
   body .get-ea .email-form .get-started {
     font-size: 0.875rem;
     padding-inline: 2rem;
+    width: fit-content;
   }
   body .footer {
     gap: 2rem;
@@ -527,15 +536,11 @@ body {
 }
 .get-ea .email-form {
   display: grid;
-  gap: 1.5rem;
+  grid-template-rows: 1fr 0.5fr 1fr;
 }
 .get-ea .email-form .label {
   position: absolute;
   opacity: 0;
-}
-.get-ea .email-form .input-box {
-  display: grid;
-  gap: 0.25rem;
 }
 .get-ea .email-form #email {
   padding-block: 0.75rem;
@@ -552,7 +557,7 @@ body {
   font-family: var(--ff-raleway);
   color: var(--error-txt);
   font-size: 0.625rem;
-  display: none;
+  visibility: hidden;
 }
 .get-ea .email-form .get-started {
   background: var(--btn-grad);

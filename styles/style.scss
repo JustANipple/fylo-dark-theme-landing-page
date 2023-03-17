@@ -266,16 +266,11 @@ body {
 
     .email-form {
         display: grid;
-        gap: 1.5rem;
+        grid-template-rows: 1fr 0.5fr 1fr;
 
         .label {
             position: absolute;
             opacity: 0;
-        }
-
-        .input-box {
-            display: grid;
-            gap: 0.25rem;
         }
 
         #email {
@@ -295,7 +290,7 @@ body {
             font-family: var(--ff-raleway);
             color: var(--error-txt);
             font-size: 0.625rem;
-            display: none;
+            visibility: hidden;
         }
 
         .get-started {
