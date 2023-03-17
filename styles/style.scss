@@ -36,10 +36,6 @@ body {
     }
 }
 
-/* ======Main====== */
-.main-cont {
-}
-
 /* ======Intro====== */
 .intro {
     position: relative;
@@ -249,7 +245,9 @@ body {
     color: var(--main-txt);
     text-align: center;
     box-shadow: 0 0.5rem 1.5rem -0.75rem black;
-    border-radius: 0.5rem;    
+    border-radius: 0.5rem;  
+    position: relative;
+    top: 11rem;
 
     .text {
         display: grid;
@@ -309,6 +307,89 @@ body {
             border: none;
             padding-block: 0.75rem;
             border-radius: 100vw;
+        }
+    }
+}
+
+/* ====== Footer ====== */
+.footer {
+    padding-block: 15rem 2.5rem;
+    padding-inline: 1.5rem;
+    background-color: var(--footer-bg);
+    color: var(--main-txt);
+    display: grid;
+    gap: 4rem;
+
+    .header {
+        display: grid;
+        gap: 2.5rem;
+
+        .logo {
+            padding-inline: 1rem;
+        }
+        /* ====== More info ====== */
+        .info {
+            display: grid;
+            gap: 1.5rem;
+
+            .location,
+            .phone,
+            .mail {
+                display: grid;
+                grid-template-areas: "icon text";
+                grid-template-columns: 1.5rem auto;
+
+                .icon {
+                    grid-area: icon;
+                    margin-inline: auto;
+                    margin-block: 0.25rem;
+                }
+
+                .desc {
+                    grid-area: text;
+                    margin-inline-start: 1rem;
+                }
+            }
+        }
+    }    
+
+    /* ====== Redirect links ====== */
+    .redirect {
+        display: grid;
+        gap: 3rem;
+
+        ul {
+            display: grid;
+            gap: 1rem;
+            padding: 0;
+
+            li {
+                list-style: none;
+                
+                a {
+                    text-decoration: none;
+                    color: var(--main-txt);
+                }
+            }
+        }
+    }
+
+    /* ====== Social ====== */
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.75rem;
+        
+        div {
+            width: 1.75rem;
+            height: 1.75rem;
+            border: 1px solid var(--main-txt);
+            border-radius: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

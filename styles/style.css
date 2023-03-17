@@ -68,7 +68,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --fw-med: 700;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1024px) {
   body {
     /* ======Navigation====== */
     /* ======Intro====== */
@@ -212,6 +212,7 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-block: 3rem 2.5rem;
     padding-inline: 4.5rem;
     gap: 2.5rem;
+    top: 7rem;
   }
   body .get-ea .text {
     gap: 1rem;
@@ -274,7 +275,6 @@ body {
   color: var(--main-txt);
 }
 
-/* ======Main====== */
 /* ======Intro====== */
 .intro {
   position: relative;
@@ -470,6 +470,8 @@ body {
   text-align: center;
   box-shadow: 0 0.5rem 1.5rem -0.75rem black;
   border-radius: 0.5rem;
+  position: relative;
+  top: 11rem;
 }
 .get-ea .text {
   display: grid;
@@ -521,4 +523,80 @@ body {
   border: none;
   padding-block: 0.75rem;
   border-radius: 100vw;
+}
+
+/* ====== Footer ====== */
+.footer {
+  padding-block: 15rem 2.5rem;
+  padding-inline: 1.5rem;
+  background-color: var(--footer-bg);
+  color: var(--main-txt);
+  display: grid;
+  gap: 4rem;
+  /* ====== Redirect links ====== */
+  /* ====== Social ====== */
+}
+.footer .header {
+  display: grid;
+  gap: 2.5rem;
+  /* ====== More info ====== */
+}
+.footer .header .logo {
+  padding-inline: 1rem;
+}
+.footer .header .info {
+  display: grid;
+  gap: 1.5rem;
+}
+.footer .header .info .location,
+.footer .header .info .phone,
+.footer .header .info .mail {
+  display: grid;
+  grid-template-areas: "icon text";
+  grid-template-columns: 1.5rem auto;
+}
+.footer .header .info .location .icon,
+.footer .header .info .phone .icon,
+.footer .header .info .mail .icon {
+  grid-area: icon;
+  margin-inline: auto;
+  margin-block: 0.25rem;
+}
+.footer .header .info .location .desc,
+.footer .header .info .phone .desc,
+.footer .header .info .mail .desc {
+  grid-area: text;
+  margin-inline-start: 1rem;
+}
+.footer .redirect {
+  display: grid;
+  gap: 3rem;
+}
+.footer .redirect ul {
+  display: grid;
+  gap: 1rem;
+  padding: 0;
+}
+.footer .redirect ul li {
+  list-style: none;
+}
+.footer .redirect ul li a {
+  text-decoration: none;
+  color: var(--main-txt);
+}
+.footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+}
+.footer .social div {
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid var(--main-txt);
+  border-radius: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

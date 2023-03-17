@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1024px) {
     body {
 
         /* ======Navigation====== */
@@ -159,6 +159,7 @@
             padding-block: 3rem 2.5rem;
             padding-inline: 4.5rem;
             gap: 2.5rem;
+            top: 7rem;
 
             .text {
                 gap: 1rem;
