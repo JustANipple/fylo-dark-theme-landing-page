@@ -38,9 +38,6 @@ body {
 
 /* ======Main====== */
 .main-cont {
-    margin-inline: 0;
-    display: grid;
-    gap: 5rem;
 }
 
 /* ======Intro====== */
@@ -93,9 +90,13 @@ body {
     }
 }
 
+/* ====== Content ====== */
+.content {
+    background-color: var(--main-bg);
+}
+
 /* ====== Features ====== */
 .features {
-    background-color: var(--main-bg);
     display: grid;
     color: var(--main-txt);
     text-align: center;
@@ -130,7 +131,53 @@ body {
                 font-size: var(--base-fs);
             }
         }
+    }
+}
 
+/* ====== Stay productive ====== */
+.stay-productive {
+    display: grid;
+    place-items: center;
+    row-gap: 2.5rem;
+    color: var(--main-txt);
+    padding-inline: 1.5rem;
+    margin-block: 10rem;
 
+    .illustration-productive {
+        padding-inline: 0.5rem;
+    }
+
+    .text {
+        display: grid;
+        row-gap: 1.5rem;
+
+        .title {
+            font-family: var(--ff-raleway);
+            margin-inline: 0.5rem;
+        }
+
+        .desc-one,
+        .desc-two,
+        .see-how {
+            font-size: var(--base-fs);
+        }
+
+        .see-how {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--see-how-txt);
+            border-bottom: 1px solid var(--see-how-txt);
+            width: fit-content;
+            padding-block: 0.25rem;
+
+            .desc {
+                font-size: 0.75rem;
+            }
+
+            .icon {
+                aspect-ratio: 1/1;
+            }
+        }
     }
 }

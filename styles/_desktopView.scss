@@ -47,7 +47,7 @@
 
             .wave {
                 position: absolute;
-                bottom: -11rem;
+                bottom: -12rem;
                 z-index: -1;
             }
         }
@@ -92,6 +92,42 @@
                 }
 
 
+            }
+        }
+
+        /* ====== Stay productive ====== */
+        .stay-productive {
+            grid-template-columns: 1fr 1fr;
+            margin-inline: auto;
+            gap: 3.5rem;
+
+            .illustration-productive {
+                padding-inline: unset;
+                margin-inline-start: auto;
+            }
+
+            .text {
+                margin-inline-end: 5rem;
+
+                .title {
+                    margin-inline: unset;
+                    font-size: 2.5rem;
+                    margin-inline-end: 15rem;
+                }
+
+                .desc-one,
+                .desc-two,
+                .see-how {
+                    font-size: 1rem;
+                    margin-inline-end: 9rem ;
+                }
+
+                .see-how {
+
+                    .desc {
+                        font-size: unset;
+                    }
+                }
             }
         }
 

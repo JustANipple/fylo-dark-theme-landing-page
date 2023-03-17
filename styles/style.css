@@ -50,6 +50,8 @@ p, h1, h2, h3, h4, h5, h6 {
   --btn-grad: linear-gradient(90deg,
   hsl(176, 68%, 64%),
   hsl(198, 60%, 50%));
+  /* "see how" color */
+  --see-how-txt: hsl(176, 68%, 64%);
   /* email error text */
   --error-txt: hsl(0, 100%, 63%);
   /* whole text */
@@ -71,6 +73,7 @@ p, h1, h2, h3, h4, h5, h6 {
     /* ======Navigation====== */
     /* ======Intro====== */
     /* ====== Features ====== */
+    /* ====== Stay productive ====== */
   }
   body .navigation {
     padding-block: 4.5rem;
@@ -108,7 +111,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   body .intro .wave {
     position: absolute;
-    bottom: -11rem;
+    bottom: -12rem;
     z-index: -1;
   }
   body .features {
@@ -159,6 +162,32 @@ p, h1, h2, h3, h4, h5, h6 {
   body .features .store .text .desc {
     font-size: var(--base-fs);
   }
+  body .stay-productive {
+    grid-template-columns: 1fr 1fr;
+    margin-inline: auto;
+    gap: 3.5rem;
+  }
+  body .stay-productive .illustration-productive {
+    padding-inline: unset;
+    margin-inline-start: auto;
+  }
+  body .stay-productive .text {
+    margin-inline-end: 5rem;
+  }
+  body .stay-productive .text .title {
+    margin-inline: unset;
+    font-size: 2.5rem;
+    margin-inline-end: 15rem;
+  }
+  body .stay-productive .text .desc-one,
+  body .stay-productive .text .desc-two,
+  body .stay-productive .text .see-how {
+    font-size: 1rem;
+    margin-inline-end: 9rem;
+  }
+  body .stay-productive .text .see-how .desc {
+    font-size: unset;
+  }
 }
 body {
   font-family: var(--ff-open-sans);
@@ -194,12 +223,6 @@ body {
 }
 
 /* ======Main====== */
-.main-cont {
-  margin-inline: 0;
-  display: grid;
-  gap: 5rem;
-}
-
 /* ======Intro====== */
 .intro {
   position: relative;
@@ -243,9 +266,13 @@ body {
   width: 100%;
 }
 
+/* ====== Content ====== */
+.content {
+  background-color: var(--main-bg);
+}
+
 /* ====== Features ====== */
 .features {
-  background-color: var(--main-bg);
   display: grid;
   color: var(--main-txt);
   text-align: center;
@@ -290,4 +317,45 @@ body {
 .features .real-time .text .desc,
 .features .store .text .desc {
   font-size: var(--base-fs);
+}
+
+/* ====== Stay productive ====== */
+.stay-productive {
+  display: grid;
+  place-items: center;
+  row-gap: 2.5rem;
+  color: var(--main-txt);
+  padding-inline: 1.5rem;
+  margin-block: 10rem;
+}
+.stay-productive .illustration-productive {
+  padding-inline: 0.5rem;
+}
+.stay-productive .text {
+  display: grid;
+  row-gap: 1.5rem;
+}
+.stay-productive .text .title {
+  font-family: var(--ff-raleway);
+  margin-inline: 0.5rem;
+}
+.stay-productive .text .desc-one,
+.stay-productive .text .desc-two,
+.stay-productive .text .see-how {
+  font-size: var(--base-fs);
+}
+.stay-productive .text .see-how {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--see-how-txt);
+  border-bottom: 1px solid var(--see-how-txt);
+  width: fit-content;
+  padding-block: 0.25rem;
+}
+.stay-productive .text .see-how .desc {
+  font-size: 0.75rem;
+}
+.stay-productive .text .see-how .icon {
+  aspect-ratio: 1/1;
 }/*# sourceMappingURL=style.css.map */
