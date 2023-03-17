@@ -152,5 +152,49 @@
             }
         }
 
+        /* ====== Get early access ====== */
+        .get-ea {
+            max-width: 54rem;
+            margin-inline: auto;
+            padding-block: 3rem 2.5rem;
+            padding-inline: 4.5rem;
+            gap: 2.5rem;
+
+            .text {
+                gap: 1rem;
+
+                .title {
+                    font-size: 2rem;
+                }
+            }
+
+            .email-form {
+                display: flex;
+
+                .input-box {
+                    flex: 2.5;
+
+                    #email {
+                        padding-inline-start: 2.5rem;
+    
+                        &::placeholder {
+                            font-size: 0.75rem;
+                        }
+                    }
+    
+                    .error {
+                        color: var(--error-txt);
+                        font-size: 0.75rem;
+                        margin-inline: 2.5rem;
+                    }
+                }
+
+                .get-started {
+                    font-size: 0.875rem;
+                    padding-inline: 2rem;
+                }
+            }
+        }
+
     }
 }
