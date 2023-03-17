@@ -68,7 +68,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --fw-med: 700;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   body {
     /* ======Navigation====== */
     /* ======Intro====== */
@@ -586,7 +586,7 @@ body {
 }
 .footer .footer-content {
   display: grid;
-  gap: 10rem;
+  gap: 5rem;
   /* ====== More info ====== */
 }
 .footer .footer-content .info,
